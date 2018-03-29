@@ -15,6 +15,7 @@
         android:layout_marginBottom="108dp"
         android:layout_marginStart="148dp"
         android:text="Start"
+        android:onClick="startService"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
