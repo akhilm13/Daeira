@@ -46,4 +46,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
         startService(new Intent(this, DownloadArticlesService.class));
     }
+
+    public void startReading (View view){
+
+        startActivity(new Intent(this, SelectArtcleToReadActivity.class));
+    }
 }

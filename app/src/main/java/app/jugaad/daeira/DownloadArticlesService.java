@@ -36,7 +36,7 @@ public class DownloadArticlesService extends IntentService {
     protected void onHandleIntent(@Nullable Intent intent)  {
 
         try {
-            URL url = new URL("http://192.168.0.101:8000/api/");
+            URL url = new URL("http://10.3.4.143:8080/api/");
 
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 

@@ -18,4 +18,18 @@
         android:onClick="startService"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/readButton"
+        android:onClick="startReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="204dp"
+        android:text="Read"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
 </android.support.constraint.ConstraintLayout>
