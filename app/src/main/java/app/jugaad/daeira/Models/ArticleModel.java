@@ -8,10 +8,10 @@ public class ArticleModel {
 
     //Relational metadata
     public static final String TABLE_NAME = "ARTICLES";
-    public static final String COLUMN_ID = "ID";
+    public static final String COLUMN_ID = "ID"; //Automatically assigned by SQLite. Primary Key
     public static  final String COLUMN_TITLE = "TITLE";
     public static  final String COLUMN_ARTICLES = "ARTICLES";
-    public static final String COLUMN_DELIVERED = "DELIVERED";
+    public static final String COLUMN_DELIVERED = "DELIVERED"; //default value 0
 
     //SQL commands
     public final static String QUERY_CREATE_TABLE = "CREATE TABLE "
@@ -24,13 +24,14 @@ public class ArticleModel {
             + COLUMN_ARTICLES
             + " TEXT, "
             + COLUMN_DELIVERED
-            + " INTEGER ";
+            + " INTEGER "
+            + ")" ;
 
     //fields for each model
     int id;
     String title;
     String article;
-    Boolean delivered;
+    int delivered;
 
     public ArticleModel(){
 
@@ -41,7 +42,7 @@ public class ArticleModel {
         this.id = id;
         this.title = title;
         this.article = article;
-        delivered = false;
+        delivered = 0;
     }
 
     public int getInt() {
